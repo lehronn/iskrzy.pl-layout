@@ -5,6 +5,18 @@ html, body
   font-family: $font
   // outline: 1px red solid
 
+.btn-next
+  border: 1px white solid
+  border-radius: 25%
+  padding: 10px
+  width: 55px
+  color: $font-color
+  height: 55px
+  line-height: 30px
+  font-size: 32px
+  text-align: center
+  background-color: $darkBlue
+
 .navbar
   width: 100%
   font-weight: $navbar-item-font
@@ -19,13 +31,13 @@ h5.menu-header:before
   margin-bottom: 6px
   width: 100px
   height: 4px
-  background-color: white
+  background-color: $background
 
 div.dropdown-menu
   background-color: $bussinesBlue
   border: 0
   border-radius: 0
-  color: white
+  color: $font-color
   margin: 8px 0 0 -130px
   padding: 25px
 
@@ -86,6 +98,7 @@ section
 div.hero
   background-color: $lightBlue
   margin-top: 40px
+  margin-bottom: 0
   height: 600px
   padding: 0
 
@@ -94,6 +107,8 @@ div.hero-lead
   top: 275px
   padding: 20px
   max-width: 680px
+  h2
+    font-weight: 900
 
 div.hero-lead:before
   content: "\a0"
@@ -183,6 +198,100 @@ div.hero-image6:hover
   color: $hover-color
   opacity: 1
   transition: opacity 1.3s ease-out
+
+div.about
+  background-color: $lightBlue
+  margin: 0
+  height: 600px
+  padding: 0
+
+div.about-lead
+  position: relative
+  top: -280px
+  padding: 20px
+  max-width: 680px
+  h2
+    font-weight: 900
+
+div.about-lead:before
+  content: "\a0"
+  display: block
+  margin-bottom: 6px
+  width: 200px
+  height: 4px
+  background-color: white
+
+div.col-8.about-images, div.col-4.about-images
+  padding: 0
+
+div.about-image0
+  background: url(../images/aboutUs.jpg)
+  width: 390px
+  height: 600px
+  opacity: 0.8
+
+div.about-image1
+  background: url(../images/wearetheteam.jpg) 50%
+  width: 900px
+  height: 600px
+  opacity: 0.7
+
+div.numbers
+  background: url(../images/numbersBackground.jpg) no-repeat $numbers-background
+  color: $font-color
+  text-align: center
+
+div.numbers-image0
+  background: url(../images/check.png) no-repeat
+  width: 60px
+  height: 60px
+  margin: 10px auto
+
+div.numbers-image0:hover
+  transform: rotateX(7deg)
+
+div.numbers-image1
+  background: url(../images/pig.png) no-repeat
+  width: 62px
+  height: 60px
+  margin: 10px auto
+
+div.numbers-image2
+  background: url(../images/pigin.png) no-repeat
+  width: 60px
+  height: 60px
+  margin: 10px auto
+
+div.numbers-image3
+  background: url(../images/idea.png) no-repeat
+  width: 49px
+  height: 60px
+  margin: 10px auto
+
+div.knowledge
+  background-color: $lightBlue
+  height: 640px
+  padding: 0
+
+div.knowledge-container
+  background: url(../images/knowledgeBackground.jpg) no-repeat $lightBlue
+  height: 640px
+  padding: 0
+
+.knowledge-lead
+  padding: 25px
+  background-color: $darkBlue
+  margin: 80px auto
+  width: 550px
+  height: 450px
+
+.knowledge-lead:before
+  content: "\a0"
+  display: block
+  margin-bottom: 6px
+  width: 200px
+  height: 4px
+  background-color: white
 
 div.footer-menu
   background-color: $bussinesBlue

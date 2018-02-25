@@ -1,11 +1,11 @@
 div.navbar.navbar-expand-lg.fixed-top.navbar-light.bg-light
   a.navbar-brand(href='#') Logo
-  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbar', aria-controls='navbar', aria-expanded='false', aria-label='Toggle navigation')
     span.navbar-toggler-icon
-  #navbarSupportedContent.collapse.navbar-collapse
-    ul.navbar-nav.ml-auto
+  #navbar.collapse.navbar-collapse
+    ul.navbar-nav.nav.ml-auto
       li.nav-item
-        a.nav-link(href='#') Aktualności
+        a.nav-link(href='#news') Aktualności
       li.nav-item.dropdown
         a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
           | Usługi
@@ -55,8 +55,10 @@ div.navbar.navbar-expand-lg.fixed-top.navbar-light.bg-light
             li
               a.dropdown-item(href='#') Optymalizacja taryf
       li.nav-item
-        a.nav-link(href='#') Poznaj nas
+        a.nav-link(href='#about') O nas
       li.nav-item
-        a.nav-link(href='#') Strefa wiedzy
+        a.nav-link(href='#knowledge') Strefa wiedzy
       li.nav-item
-        a.nav-link(href='#') Kontakt
+        a.nav-link(href='#customers') Klienci
+      li.nav-item
+        a.nav-link(href='#contact') Kontakt

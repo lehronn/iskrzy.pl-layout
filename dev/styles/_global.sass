@@ -1,11 +1,15 @@
 //global styles
 html, body
+  position: relative
   height: 100%
   min-height: 100%
   font-family: $font
   // outline: 1px red solid
 
-.btn-next
+h1, h2, h3, h4, h5, h6
+  text-transform: uppercase
+
+.btn-arrow-next
   border: 1px white solid
   border-radius: 25%
   padding: 10px
@@ -91,9 +95,6 @@ a.dropdown-item
 section
   padding: 3em 0 3em 0
 
-.carousel-inner
-  max-height: 60vh
-
 div.hero
   background-color: $lightBlue
   margin-top: 40px
@@ -103,7 +104,7 @@ div.hero
 
 div.hero-lead
   position: absolute
-  top: 275px
+  top: 245px
   padding: 20px
   max-width: 680px
   h2
@@ -120,80 +121,63 @@ div.hero-lead:before
 div.col-4.hero-images
   padding: 0
 
-div.hero-image0
+div.hero-image
+  opacity: 0.6
+  width: 400px
+  height: 200px
+
+div.hero-img0
   background: url(../images/heroBackground.jpg)
   width: 390px
   height: 600px
-  opacity: 0.8
 
-div.hero-image1
+div.hero-img1
   background: url(../images/hero0.jpg)
-  width: 400px
-  height: 200px
-  opacity: 0.7
 
-div.hero-image2
+div.hero-img2
   background-color: $lightBlue
-  width: 400px
-  height: 200px
-  opacity: 0.7
 
-div.hero-image3
+div.hero-img3
+  background: url(../images/hero1.jpg)
+
+div.hero-img4
   background: url(../images/hero2.jpg)
-  width: 400px
-  height: 200px
-  opacity: 0.7
 
-div.hero-image4
+div.hero-img5
   background: url(../images/hero3.jpg)
-  width: 400px
-  height: 200px
-  opacity: 0.7
 
-div.hero-image5
+div.hero-img5
   background: url(../images/hero4.jpg)
-  width: 400px
-  height: 200px
-  opacity: 0.7
 
-div.hero-image5
+div.hero-img6
   background: url(../images/hero5.jpg)
-  width: 400px
-  height: 200px
-  opacity: 0.7
 
-div.hero-image6
-  background: url(../images/hero6.jpg)
-  width: 400px
-  height: 200px
-  opacity: 0.7
-
-div.hero-image1:hover
+div.hero-img1:hover
   color: $hover-color
   opacity: 1
   transition: opacity 1.3s ease-out
 
-div.hero-image2:hover
+div.hero-img2:hover
   color: $hover-color
   opacity: 1
   transition: opacity 1.3s ease-out
 
-div.hero-image3:hover
+div.hero-img3:hover
   color: $hover-color
   opacity: 1
   transition: opacity 1.3s ease-out
 
-div.hero-image4:hover
+div.hero-img4:hover
   color: $hover-color
   opacity: 1
   transition: opacity 1.3s ease-out
 
-div.hero-image5:hover
+div.hero-img5:hover
   color: $hover-color
   opacity: 1
   transition: opacity 1.3s ease-out
 
-div.hero-image6:hover
+div.hero-img6:hover
   color: $hover-color
   opacity: 1
   transition: opacity 1.3s ease-out
@@ -287,13 +271,23 @@ div.knowledge-container
   width: 550px
   height: 450px
 
-.knowledge-lead:before
+.knowledge-header:before
   content: "\a0"
   display: block
   margin-bottom: 6px
   width: 200px
   height: 4px
   background-color: white
+
+.btn-knowledge-slider
+  position: absolute
+  top: 320px
+  margin: 0 200px
+
+.lern-more
+  position: absolute
+  bottom: 10px
+  right: 10px
 
 .customer-img0
   background: url(../images/customer0.png) no-repeat
@@ -332,8 +326,24 @@ div.knowledge-container
   height: 78px
   margin: 10px auto
 
+.customers-list
+  margin-top: 40px
+
 div.footer-menu
   background-color: $bussinesBlue
+
+.footer-menu-header
+  font-weight: 700
+  a
+    color: $font-color
+
+ul.footer-menu-list
+  list-style: none
+  padding-left: 10px
+
+ul.footer-menu-list a
+  color: $font-color
+  font-weight: 300
 
 div.footer
   height: 50px

@@ -69,7 +69,6 @@ a.dropdown-item
   top: 0
   right: 0
   padding-top: 20px
-  overflow-x: hidden
   z-index: 1
   height: 100%
   width: 70px
@@ -85,8 +84,8 @@ a.dropdown-item
 
 .socialIcon:hover
   cursor: pointer
-  color: $hover-color
-  transition: color 1.5s ease-out
+  transform: scale(1.5,1.5)
+  transition: transform 1.5s ease-out
   font-size: 2em
 
 section
@@ -237,7 +236,8 @@ div.about-image1
   opacity: 0.7
 
 div.numbers
-  background: url(../images/numbersBackground.jpg) no-repeat $numbers-background
+  background: url(../images/numbersBackground.jpg) 35% 50% no-repeat $numbers-background
+  height: 270px
   color: $font-color
   text-align: center
 
@@ -292,6 +292,43 @@ div.knowledge-container
   width: 200px
   height: 4px
   background-color: white
+
+.customer-img0
+  background: url(../images/customer0.png) no-repeat
+  width: 77px
+  height: 80px
+  margin: 10px auto
+
+.customer
+  filter: grayscale(100%)
+
+.customer:hover
+  filter: grayscale(0)
+  transition: filter 1.5s ease-out
+
+.customer-img1
+  background: url(../images/customer1.png) no-repeat
+  width: 138px
+  height: 64px
+  margin: 10px auto
+
+.customer-img2
+  background: url(../images/customer2.png) no-repeat
+  width: 66px
+  height: 80px
+  margin: 10px auto
+
+.customer-img3
+  background: url(../images/customer3.png) no-repeat
+  width: 66px
+  height: 85px
+  margin: 10px auto
+
+.customer-img4
+  background: url(../images/customer4.png) no-repeat
+  width: 67px
+  height: 78px
+  margin: 10px auto
 
 div.footer-menu
   background-color: $bussinesBlue

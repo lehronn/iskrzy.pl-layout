@@ -9,17 +9,25 @@ html, body
 h1, h2, h3, h4, h5, h6
   text-transform: uppercase
 
+a
+  color: $font-color
+
+a:hover
+  color: $hover-color
+  transition: color 1s ease-out
+  text-decoration: none
+
 .btn-arrow-next
+  background-color: $darkBlue
   border: 1px white solid
   border-radius: 25%
-  padding: 10px
-  width: 55px
   color: $font-color
+  font-size: 32px
   height: 55px
   line-height: 30px
-  font-size: 32px
+  padding: 10px
   text-align: center
-  background-color: $darkBlue
+  width: 55px
 
 .navbar
   width: 100%
@@ -288,6 +296,11 @@ div.knowledge-container
   position: absolute
   bottom: 10px
   right: 10px
+  a
+    text-transform: uppercase
+    font-weight: 700
+  .fa
+    padding: 10px
 
 .customer-img0
   background: url(../images/customer0.png) no-repeat
@@ -334,15 +347,12 @@ div.footer-menu
 
 .footer-menu-header
   font-weight: 700
-  a
-    color: $font-color
 
 ul.footer-menu-list
   list-style: none
   padding-left: 10px
 
 ul.footer-menu-list a
-  color: $font-color
   font-weight: 300
 
 div.footer

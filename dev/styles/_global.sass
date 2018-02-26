@@ -4,7 +4,7 @@ html, body
   height: 100%
   min-height: 100%
   font-family: $font
-  // outline: 1px red solid
+  outline: 1px red solid
 
 h1, h2, h3, h4, h5, h6
   text-transform: uppercase
@@ -190,6 +190,41 @@ div.hero-img6:hover
   opacity: 1
   transition: opacity 1.3s ease-out
 
+// NEWS STYLES
+#myCarousel .carousel-caption
+  left: 0
+  right: 0
+  bottom: 0
+  text-align: left
+  padding: 10px
+  background: rgba(0,0,0,0.6)
+  text-shadow: none
+
+#myCarousel .list-group
+  position: absolute
+  top: 0
+  right: 0
+
+#myCarousel .list-group-item
+  border-radius: 0px
+    cursor: pointer
+
+#myCarousel .list-group .active
+  background-color: #eee
+
+@media (min-width: 992px)
+  #myCarousel
+    padding-right: 33.3333%
+
+  #myCarousel .carousel-controls
+    display: none
+
+@media (max-width: 991px)
+  .carousel-caption p,
+  #myCarousel .list-group
+    display: none
+
+// ABOUT STYLES
 div.about
   background-color: $lightBlue
   margin: 0

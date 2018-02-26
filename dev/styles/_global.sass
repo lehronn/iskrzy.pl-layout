@@ -4,7 +4,7 @@ html, body
   height: 100%
   min-height: 100%
   font-family: $font
-  outline: 1px red solid
+  // outline: 1px red solid
 
 h1, h2, h3, h4, h5, h6
   text-transform: uppercase
@@ -81,7 +81,7 @@ a.dropdown-item
   top: 0
   right: 0
   padding-top: 20px
-  z-index: 1
+  z-index: 1000
   height: 100%
   width: 70px
 
@@ -191,30 +191,38 @@ div.hero-img6:hover
   transition: opacity 1.3s ease-out
 
 // NEWS STYLES
+#news-carousel .carousel-inner
+  max-height: 580px
+  padding: 0
+
+
 #news-carousel .carousel-caption
-  left: 0
-  right: 0
-  bottom: 0
-  text-align: left
-  padding: 10px
-  background: rgba(0,0,0,0.6)
-  text-shadow: none
+  background: $bussinesBlue
+
+.list-group-item:first-child
+  border-top-left-radius: 0
+  border-top-right-radius: 0
+
+.list-group-item:last-child
+  border-bottom-left-radius: 0
+  border-bottom-right-radius: 0
+
+div.news-list.col-4
+  padding: 0 70px 0 0
 
 #news-carousel .list-group
-  position: absolute
-  top: 0
-  right: 0
+  padding: 0
 
 #news-carousel .list-group-item
-  border-radius: 0px
-    cursor: pointer
+  cursor: pointer
+  background-color: $lightBlue
 
 #news-carousel .list-group .active
-  background-color: #eee
+  background-color: $darkBlue
 
 @media (min-width: 992px)
   #news-carousel
-    padding-right: 33.3333%
+
 
   #news-carousel .carousel-controls
     display: none

@@ -1,3 +1,4 @@
+// localScroll
 $(document).ready(function () {
   // start of LOCALSCROLL ANIMATE
   $("#navbar ul li a[href^='#']").on('click', function(e) {

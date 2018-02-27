@@ -28,27 +28,30 @@
       // End Item
     // End Carousel Inner
     .news-list.col-4
-      ul.list-group
-        li.list-group-item.active(data-target='#news-carousel', data-slide-to='0')
-          h4 Lorem ipsum dolor sit amet consetetur sadipscing
-          p 03 luty 2018
-          a.btn.btn-arrow-next.btn-lg(href="#" role="button")
-            i.fa.fa-angle-right(aria-hidden='true')
-        li.list-group-item(data-target='#news-carousel', data-slide-to='1')
-          h4 Consetetur sadipscing elitar, sed diam nonumy eirmod
-          p 06 luty 2018
-          a.btn.btn-arrow-next.btn-lg(href="#" role="button")
-            i.fa.fa-angle-right(aria-hidden='true')
-        li.list-group-item(data-target='#news-carousel', data-slide-to='2')
-          h4 Tempor invidunt ut labore et dolore
-          p 07 luty 2018
-          a.btn.btn-arrow-next.btn-lg(href="#" role="button")
-            i.fa.fa-angle-right(aria-hidden='true')
-      .see-all-news
-        span
-          a(href="#" role="button")
-            | Zobacz wszystkie 
-            i.fa.fa-angle-right.btn(aria-hidden='true')
+      .row
+        .col-12
+          ul.list-group
+            li.list-group-item.active(data-target='#news-carousel', data-slide-to='0')
+              h4 Lorem ipsum dolor sit amet consetetur sadipscing
+              p 03 luty 2018
+              a.btn.btn-arrow-next.btn-lg(href="#" role="button")
+                i.fa.fa-angle-right(aria-hidden='true')
+            li.list-group-item(data-target='#news-carousel', data-slide-to='1')
+              h4 Consetetur sadipscing elitar, sed diam nonumy eirmod
+              p 06 luty 2018
+              a.btn.btn-arrow-next.btn-lg(href="#" role="button")
+                i.fa.fa-angle-right(aria-hidden='true')
+            li.list-group-item(data-target='#news-carousel', data-slide-to='2')
+              h4 Tempor invidunt ut labore et dolore
+              p 07 luty 2018
+              a.btn.btn-arrow-next.btn-lg(href="#" role="button")
+                i.fa.fa-angle-right(aria-hidden='true')
+      .row.see-all-news
+        .col-12
+          span
+            a(href="#" role="button")
+              | Zobacz wszystkie 
+              i.fa.fa-angle-right.btn(aria-hidden='true')
       // Controls
       .carousel-controls
         a.left.carousel-control(href='#news-carousel', data-slide='prev')

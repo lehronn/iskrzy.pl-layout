@@ -1,0 +1,46 @@
+.navbar
+  width: 100%
+  font-weight: $navbar-item-font
+
+h5.menu-header
+  font-weight: $menu-header-font
+  padding: 10px 0 10px 0
+
+h5.menu-header:before
+  content: "\a0"
+  display: block
+  margin-bottom: 6px
+  width: 100px
+  height: 4px
+  background-color: $background
+
+div.dropdown-menu
+  background-color: $bussinesBlue
+  border: 0
+  border-radius: 0
+  color: $font-color
+  margin: 8px 0 0 -58px
+  padding: 20px
+
+div.dropdown-menu:before
+  content: "\a0"
+  display: block
+  margin-bottom: 6px
+  width: 30px
+  height: 30px
+  transform: rotate(45deg)
+  background-color: $bussinesBlue
+  position: relative
+  top: -30px
+  left: 75px
+  z-index: 3
+
+ul.dropdown-menu-list
+  position: relative
+  top: -50px
+  z-index: 50
+  list-style: none
+  padding: 0
+
+a.dropdown-item
+  color: white

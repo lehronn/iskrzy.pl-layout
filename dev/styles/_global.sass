@@ -134,6 +134,11 @@ div.hero-image
   width: 400px
   height: 200px
 
+div.hero-image:hover
+  color: $hover-color
+  opacity: 1
+  transition: opacity 1.3s ease-out
+
 div.hero-img0
   background: url(../images/heroBackground.jpg)
   width: 390px
@@ -159,36 +164,6 @@ div.hero-img5
 
 div.hero-img6
   background: url(../images/hero5.jpg)
-
-div.hero-img1:hover
-  color: $hover-color
-  opacity: 1
-  transition: opacity 1.3s ease-out
-
-div.hero-img2:hover
-  color: $hover-color
-  opacity: 1
-  transition: opacity 1.3s ease-out
-
-div.hero-img3:hover
-  color: $hover-color
-  opacity: 1
-  transition: opacity 1.3s ease-out
-
-div.hero-img4:hover
-  color: $hover-color
-  opacity: 1
-  transition: opacity 1.3s ease-out
-
-div.hero-img5:hover
-  color: $hover-color
-  opacity: 1
-  transition: opacity 1.3s ease-out
-
-div.hero-img6:hover
-  color: $hover-color
-  opacity: 1
-  transition: opacity 1.3s ease-out
 
 // NEWS STYLES
 #news-carousel .carousel-inner
@@ -308,8 +283,8 @@ div.about-image0
   opacity: 0.8
 
 div.about-image1
-  background: url(../images/wearetheteam.jpg) 50%
-  width: 900px
+  background: url(../images/wearetheteam.jpg) 50% no-repeat
+  width: 100%
   height: 600px
   opacity: 0.7
 

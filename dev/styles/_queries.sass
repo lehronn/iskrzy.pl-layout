@@ -19,6 +19,9 @@
   div.numbers
     background: $numbers-background
 
+  #news-carousel .carousel-inner .carousel-item
+    height: 450px
+
 @media (max-width: 600px)
   .btn-knowledge-slider
     margin: 0 60px
@@ -32,3 +35,11 @@
 
   div.about-lead
     padding: 0
+
+@media (max-width: 991px)
+  #news-carousel .carousel-inner
+    flex: 0 0 100% !important
+    max-width: 100% !important
+
+  *
+    outline: 1px red solid

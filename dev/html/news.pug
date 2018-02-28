@@ -25,6 +25,14 @@
             a(href='#') Tempor invidunt ut labore et dolore
           p
             | Iincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            // Controls
+      .carousel-controls
+        a.carousel-control-prev(href='#news-carousel', role='button', data-slide='prev')
+          span.carousel-control-prev-icon(aria-hidden='true')
+          span.sr-only Previous
+        a.carousel-control-next(href='#news-carousel', role='button', data-slide='next')
+          span.carousel-control-next-icon(aria-hidden='true')
+          span.sr-only Next  
       // End Item
     // End Carousel Inner
     .news-list.col-4
@@ -52,10 +60,4 @@
             a(href="#" role="button")
               | Zobacz wszystkie 
               i.fa.fa-angle-right.btn(aria-hidden='true')
-      // Controls
-      .carousel-controls
-        a.left.carousel-control(href='#news-carousel', data-slide='prev')
-          span.glyphicon.glyphicon-chevron-left
-        a.right.carousel-control(href='#news-carousel', data-slide='next')
-          span.glyphicon.glyphicon-chevron-right
     // End Carousel

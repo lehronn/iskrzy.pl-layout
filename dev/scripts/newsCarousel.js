@@ -1,4 +1,4 @@
-// news Carousel
+// news carousel
 $(document).ready(function(){
   var clickEvent = false;
   $('#news-carousel').carousel({

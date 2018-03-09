@@ -24,6 +24,6 @@ $(document).ready(function(){
 $(window).on('load', function() {
   var boxheight = $('#news-carousel .carousel-inner').innerHeight();
   var itemlength = $('#news-carousel .carousel-item').length;
-  var triggerheight = Math.round(boxheight/itemlength+1-17);
+  var triggerheight = Math.round(boxheight/itemlength-16);
 	$('#news-carousel .list-group-item').outerHeight(triggerheight);
 });
